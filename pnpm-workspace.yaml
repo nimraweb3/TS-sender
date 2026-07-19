@@ -1,0 +1,9 @@
+allowBuilds:
+  bufferutil: false
+  keccak: set this to true or false
+  sharp: true
+  unrs-resolver: true
+  utf-8-validate: false
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
