@@ -1,6 +1,6 @@
 allowBuilds:
   bufferutil: false
-  esbuild: set this to true or false
+  esbuild: false
   keccak: set this to true or false
   sharp: true
   unrs-resolver: true

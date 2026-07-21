@@ -9,11 +9,11 @@ import {
     useWaitForTransactionReceipt,
     useReadContracts,
 } from "wagmi"
-import { chainsToTSender, tsenderAbi, erc20Abi } from "@/constants"
+import { chainsToTSender, tsenderAbi, erc20Abi } from "../constants"
 import { readContract } from "@wagmi/core"
 import { useConfig } from "wagmi"
 import { CgSpinner } from "react-icons/cg"
-import { calculateTotal, formatTokenAmount } from "@/utils"
+import { calculateTotal, formatTokenAmount } from "../utils"
 import { InputForm } from "./ui/InputField"
 import { Tabs, TabsList, TabsTrigger } from "./ui/Tabs"
 import { waitForTransactionReceipt } from "@wagmi/core"

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import AirdropForm from "@/components/AirdropForm"
+import AirdropForm from "@/src/components/AirdropForm"
 import { useAccount } from "wagmi"
 
 export default function HomeContent() {
