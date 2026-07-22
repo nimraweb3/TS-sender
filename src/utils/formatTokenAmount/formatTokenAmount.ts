@@ -1,6 +1,12 @@
-export function formatTokenAmount(weiAmount: number, decimals: number): string {
-    const tokenAmount = weiAmount / Math.pow(10, decimals)
-    return tokenAmount.toLocaleString(undefined, {
+import { formatUnits } from "viem"
+
+export function formatTokenAmount(
+    weiAmount: bigint,
+    decimals: number
+): string {
+    const formatted = Number(formatUnits(weiAmount, decimals))
+
+    return formatted.toLocaleString(undefined, {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
     })

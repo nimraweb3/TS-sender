@@ -2,8 +2,8 @@
 
 import { useAccount, useChainId, useReadContracts } from "wagmi"
 import { CgSpinner } from "react-icons/cg"
-import { erc20Abi } from "@/constants"
-import { formatTokenAmount } from "@/utils"
+import { erc20Abi } from "../constants"
+import { formatTokenAmount } from "../utils"
 
 interface TokenDetailsBoxProps {
     tokenAddress: string
